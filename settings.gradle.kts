@@ -18,11 +18,7 @@ dependencyResolutionManagement {
         mavenCentral()
 
         maven {
-            url = uri("https://maven.pkg.github.com/astropay-it/tokenizer-android")
-            credentials {
-                username = System.getenv("SDK_ANDROID_USER_ARTIFACT")
-                password = System.getenv("SDK_ANDROID_TOKEN_ARTIFACT")
-            }
+            setUrl("https://infra-astropay.github.io/tokenizer-android/")
         }
     }
 }
